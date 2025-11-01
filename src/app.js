@@ -27,6 +27,11 @@ const swaggerOptions = {
     servers: [
       {
         url: `http://localhost:${process.env.PORT}`, // Swagger server URL
+        description: "Local server",
+      },
+      {
+        url: `https://ecommerce-backend-wmh9.onrender.com`, // Production server URL
+        description: "Production server",
       },
     ],
   },
@@ -61,4 +66,3 @@ app.listen(process.env.PORT, () => {
 });
 
 export default app;
-
